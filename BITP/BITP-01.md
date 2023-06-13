@@ -1,3 +1,3 @@
-# BITP-01: WHy RGB protocol
+# BITP-01: Why RGB protocol
 
 `author: 22388o` `mandatory` 
