@@ -7,4 +7,4 @@ BITP stand for Bitswap Improvement Proposal. They exist to document what MUST, w
 - BITP-03: DLCs
 - BITP-04: Lightning Network compatible
 - BITP-05: Swap Assets
-- BIT-06: Liquidity Provider 
+- BITP-06: Liquidity Provider 
