@@ -1,4 +1,4 @@
-# BITP-03: Lightning Network compatible
+# BITP-04: Lightning Network compatible
 
 `author: 22388o` `mandatory` `final`
 
