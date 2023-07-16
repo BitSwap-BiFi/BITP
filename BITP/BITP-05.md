@@ -2,7 +2,7 @@
 
 `author: 22388o` `mandatory` `final`
 
-In a DEX-style Uniswap scenario implemented using the RGB protocol, you can create a decentralized exchange platform that allows users to swap assets using the principles of automated market making (AMM). Here's a possible scenario:
+In a DEX-style Uniswap scenario implemented using the RGB protocol, you can create a decentralized exchange platform that allows users to swap assets using the principles of automated market making (AMM).
 
 1. Asset Tokenization: The RGB protocol enables the tokenization of various assets on the Bitcoin blockchain. In this scenario, you would tokenize different assets, such as cryptocurrencies or other digital assets, as RGB tokens. These RGB tokens would represent ownership or claim over the underlying assets.
 
