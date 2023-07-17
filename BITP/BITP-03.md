@@ -17,3 +17,11 @@ DLCs can be relevant in the context of decentralized exchanges (DEXs) as they pr
 5. Settlement: After the contract reaches its end time or the specified outcome occurs (e.g., a specific price is reached), the contract is settled. The settlement process determines how the collateral is distributed between the parties based on the contract terms and the oracle-provided data. The settlement transaction is executed on the Bitcoin blockchain, and the funds are released accordingly.
 
 By utilizing DLCs in a DEX, traders can engage in trustless and decentralized trades without relying on centralized intermediaries or external oracles. DLCs provide security, privacy, and immutability through their execution on the Bitcoin blockchain.
+
+## Implementation
+
+```phyton
+interface RGB20Lightning extends RGB20
+    -- DLCs-specific functions
+    op? DLC :: contract -> execution
+    op? DLC :: contract -> future assetOwner*, assetContract*
