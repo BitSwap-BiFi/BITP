@@ -17,3 +17,12 @@ The combination of the RGB protocol and the Lightning Network (LDK) can offer a 
 6. Decentralized Exchanges (DEX): The combination of RGB and LDK can facilitate the development of decentralized exchanges that operate on the Lightning Network. These DEXs can leverage RGB assets for trading, allowing users to swap tokens directly within Lightning Network payment channels. This decentralized and efficient trading infrastructure provides a seamless experience for users, enhancing the overall ecosystem.
 
 By integrating the RGB protocol with the Lightning Network, you can leverage the strengths of both technologies: RGB's asset issuance and management capabilities and Lightning Network's scalability, speed, and low-cost transactions. This integration enables a seamless, decentralized, and efficient ecosystem for the issuance, transfer, and trading of digital assets. It empowers users with fast, secure, and private asset transactions while leveraging the robustness and security of the Bitcoin blockchain.
+
+## Implementation
+
+```phyton
+interface RGB20Lightning extends RGB20
+    -- Lightning Network-specific functions
+    op? Invoice :: amount -> invoice
+    op? PayInvoice :: invoice -> future assetOwner*
+  ```
