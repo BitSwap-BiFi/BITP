@@ -20,7 +20,7 @@ By combining the RGB protocol with the principles of automated market making, yo
 
 Based on RGB-20 from [RGB-20: Fungible assets](https://standards.lnp-bp.org/rgb/lnpbp-0020)
 
-```json
+```phyton
 interface RGB20
     global spec :: RGBContract.DivisibleAssetSpec
     global data :: RGBContract.ContractData
