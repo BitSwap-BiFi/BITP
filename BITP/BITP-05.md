@@ -15,3 +15,51 @@ In a DEX-style Uniswap scenario implemented using the RGB protocol, you can crea
 5. Trading Fees and Incentives: The DEX can implement trading fees to incentivize liquidity providers and contribute to the platform's sustainability. When users perform swaps, a portion of the traded assets can be collected as fees and distributed to liquidity providers as rewards. These rewards can be paid out in the form of RGB tokens or other incentives to encourage liquidity provision.
 
 By combining the RGB protocol with the principles of automated market making, you can create a DEX-style Uniswap scenario where users can swap assets in a decentralized and automated manner. The RGB protocol provides the foundation for asset tokenization and transaction management, while the AMM algorithm ensures efficient and dynamic asset trading within liquidity pools.
+
+## Implementation
+
+Based on RGB-20 from [RGB-20: Fungible assets](https://standards.lnp-bp.org/rgb/lnpbp-0020)
+
+```json
+interface RGB20
+    global spec :: RGBContract.DivisibleAssetSpec
+    global data :: RGBContract.ContractData
+    global created :: RGBContract.Timestamp
+    global issuedSupply+ :: RGBContract.Amount
+    global burnedSupply* :: RGBContract.Amount
+    global replacedSupply* :: RGBContract.Amount
+    public inflationAllowance* :: Zk64
+    public updateRight?
+    public burnEpoch?
+    public burnRight*
+    private assetOwner* :: Zk64
+
+    genesis :: spec, data, created, issuedSupply, reserves {RGBContract.ProofOfReserves ^ 0..0xFFFF}
+      -> assetOwner*, inflationAllowance*, updateRight?, burnEpoch?
+        !! supplyMismatch | invalidProof | insufficientReserves
+
+    op Transfer :: previous assetOwner+ -> beneficiary assetOwner+
+      !! nonEqualAmounts
+
+    op? Issue :: used inflationAllowance+, reserves {RGBContract.ProofOfReserves ^ 0..0xFFFF}
+      -> issuedSupply, future inflationAllowance*, beneficiary assetOwner*
+        !! supplyMismatch | invalidProof | issueExceedsAllowance | insufficientReserves
+
+    op? OpenEpoch :: used burnEpoch -> next burnEpoch?, burnRight
+
+    op? Burn :: used burnRight, burnedSupply, burnProofs {RGBContract.ProofOfReserves ^ 0..0xFFFF}
+      -> future burnRight?
+        !! supplyMismatch | invalidProof | insufficientCoverage
+
+    op? Replace :: used burnRight, replacedSupply, burnProofs {RGBContract.ProofOfReserves ^ 0..0xFFFF}
+      -> future burnRight?, beneficiary assetOwner+
+        !! nonEqualAmounts | supplyMismatch | invalidProof | insufficientCoverage
+
+    op? Rename :: used updateRight -> future updateRight?, new spec
+
+     op? Swap :: source assetOwner+, destination assetOwner+, amount
+      -> future source assetOwner+, future destination assetOwner+
+        !! insufficientBalance | nonEqualAmounts
+```
+
+
