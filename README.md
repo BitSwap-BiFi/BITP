@@ -8,3 +8,7 @@ BITP stand for Bitswap Improvement Proposal. They exist to document what MUST, w
 - [BITP-04: Lightning Network compatible](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-04.md)
 - [BITP-05: Swap Assets](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-05.md)
 - [BITP-06: Liquidity Provider](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-06.md)
+
+## Contribution
+
+If you want add a new feature on Bitswap, please open PR
