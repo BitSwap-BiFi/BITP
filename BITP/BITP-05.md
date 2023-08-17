@@ -14,6 +14,8 @@ In a DEX-style Uniswap scenario implemented using the RGB protocol, you can crea
 
 5. Trading Fees and Incentives: The DEX can implement trading fees to incentivize liquidity providers and contribute to the platform's sustainability. When users perform swaps, a portion of the traded assets can be collected as fees and distributed to liquidity providers as rewards. These rewards can be paid out in the form of RGB tokens or other incentives to encourage liquidity provision.
 
+6. RGB Assets on [Bitswap](https://github.com/BitSwap-BiFi/Assets-DEX)
+
 By combining the RGB protocol with the principles of automated market making, you can create a DEX-style Uniswap scenario where users can swap assets in a decentralized and automated manner. The RGB protocol provides the foundation for asset tokenization and transaction management, while the AMM algorithm ensures efficient and dynamic asset trading within liquidity pools.
 
 ## Implementation
