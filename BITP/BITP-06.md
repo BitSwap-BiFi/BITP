@@ -1,6 +1,6 @@
 # BITP-06: Liquidity Provider(LP)
 
-`author: 22388o` `mandatory` `final`
+`author: 22388o` `author: Rsync25` `mandatory` `final`
 
 In a DEX-style Uniswap scenario implemented using the RGB protocol, liquidity providers play a crucial role in maintaining liquidity within the platform. 
 
