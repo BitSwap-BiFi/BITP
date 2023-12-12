@@ -1,6 +1,6 @@
 # BITP-03: DLCs
 
-`author: 22388o` `mandatory` `final`
+`author: 22388o` `author: Rsync25` `mandatory` `final`
 
 DLCs (Discreet Log Contracts) are another type of protocol built on top of the Bitcoin blockchain that enables the creation of smart contracts for financial agreements. DLCs allow parties to enter into contracts without requiring trust in a third party or an oracle. These contracts are "discreet" because the details of the contract are known only to the involved parties.
 
