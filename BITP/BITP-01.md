@@ -1,6 +1,6 @@
 # BITP-01: Why RGB protocol?
 
-`author: 22388o` `mandatory` `final`
+`author: 22388o` `author: Rsync25` `mandatory` `final`
 
 ## What is RGB? 
 
