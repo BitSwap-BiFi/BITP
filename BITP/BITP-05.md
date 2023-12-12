@@ -1,6 +1,6 @@
 # BITP-05: Swap Assets
 
-`author: 22388o` `mandatory` `final`
+`author: 22388o` `author: Rsync25` `mandatory` `final`
 
 In a DEX-style Uniswap scenario implemented using the RGB protocol, you can create a decentralized exchange platform that allows users to swap assets using the principles of automated market making (AMM).
 
