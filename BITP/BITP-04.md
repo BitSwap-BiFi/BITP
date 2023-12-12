@@ -1,6 +1,6 @@
 # BITP-04: Lightning Network compatible
 
-`author: 22388o` `mandatory` `final`
+`author: 22388o` `author: Rsync25` `mandatory` `final`
 
 The combination of the RGB protocol and the Lightning Network (LDK) can offer a powerful framework for decentralized asset issuance, management, and lightning-fast transactions. Here's how these two technologies can work together:
 
