@@ -12,6 +12,7 @@ BITP stand for Bitswap Improvement Proposal. They exist to document what MUST, w
 - BITP-08: Prime & Liquid
 - BITP-09: Taproot Channel
 - BITP-10: Musig2
+- BITP-11: RGB Wallets
 
 ## Contribution
 
