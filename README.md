@@ -1,4 +1,4 @@
-# BITP(Bitswap Improvement Proposal)
+# BITP(Bitswap Improvement Proposal) ⚡
 
 BITP stand for Bitswap Improvement Proposal. They exist to document what MUST, what SHOULD and what MAY be implemented by Bitswap
 
