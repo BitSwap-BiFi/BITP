@@ -13,3 +13,7 @@ Combining the Liquid Network's capabilities with UTXO bridges and the principles
 With confidential transactions, the UTXOs stay blinded providing still more privacy and avoiding track transactions to Governament.
 
 In summary, the Liquid Network, with its low fees and support for asset issuance, combined with UTXO bridges and the RGB protocol for asset tokenization and AMM, can enable the creation of efficient and decentralized exchange platforms for swapping assets in a secure and cost-effective manner.
+
+## Prime
+
+TBD
