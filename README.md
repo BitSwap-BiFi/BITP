@@ -10,8 +10,8 @@ BITP stand for Bitswap Improvement Proposal. They exist to document what MUST, w
 - [BITP-06: Liquidity Provider](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-06.md)
 - [BITP-07: Bifrost](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-07.md)
 - [BITP-08: Prime & Liquid (UTXO Protocols)](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-08.md)
-- BITP-09: Taproot Channel
-- BITP-10: Musig2
+- [BITP-09: Taproot Channel](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-09.md)
+- [BITP-10: Musig2](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-10.md)
 - [BITP-11: RGB Wallets](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-11.md)
 
 ## Contribution
