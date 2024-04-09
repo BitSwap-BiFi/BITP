@@ -13,7 +13,7 @@ BITP stand for Bitswap Improvement Proposal. They exist to document what MUST, w
 - [BITP-09: Taproot Channel](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-09.md)
 - [BITP-10: Musig2](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-10.md)
 - [BITP-11: RGB Wallets](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-11.md)
-- BITP-12: MEVs attacks
+- [BITP-12: MEVs attacks](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-12.md)
 
 ## Contribution
 
