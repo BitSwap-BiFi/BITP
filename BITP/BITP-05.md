@@ -14,7 +14,7 @@ In a DEX-style Uniswap scenario implemented using the RGB protocol, you can crea
 
 5. Trading Fees and Incentives: The DEX can implement trading fees to incentivize liquidity providers and contribute to the platform's sustainability. When users perform swaps, a portion of the traded assets can be collected as fees and distributed to liquidity providers as rewards. These rewards can be paid out in the form of RGB tokens or other incentives to encourage liquidity provision.
 
-6. RGB Assets on [Bitswap](https://github.com/BitSwap-BiFi/Assets-DEX)
+6. RGB Assets on [Bitswap](https://github.com/BitSwap-BiFi/Assets-DEX) with RGB20 and RGB25
 
 By combining the RGB protocol with the principles of automated market making, you can create a DEX-style Uniswap scenario where users can swap assets in a decentralized and automated manner. The RGB protocol provides the foundation for asset tokenization and transaction management, while the AMM algorithm ensures efficient and dynamic asset trading within liquidity pools.
 
@@ -64,6 +64,53 @@ interface RGB20
         !! insufficientBalance | nonEqualAmounts
 ```
 ## Implementation RGB25
+```phyton
+-- Defined by LNPBP-31 standard in `RGBContract.sty` file
+import urn:ubideco:stl:6vbr9ZrtsD9aBjo5qRQ36QEZPVucqvRRjKCPqE8yPeJr#choice-little-boxer as RGBContract
+
+interface RGB25
+    global name :: RGBContract.Name
+    global details :: RGBContract.Details
+    global precision :: RGBContract.Precision
+
+    global data :: RGBContract.ContractData
+    global created :: RGBContract.Timestamp
+
+    -- State which contains amounts issued
+    global issuedSupply :: RGBContract.Amount
+    -- State which accumulates amounts burned
+    global burnedSupply* :: RGBContract.Amount
+
+    -- Right to burn or replace existing assets under some epoch
+    public burnRight*
+
+    -- Ownership right over assets
+    private assetOwner+ :: Zk64
+
+    genesis       :: name
+                   , details
+                   , precision
+                   , data
+                   , created
+                   , issuedSupply
+                   , reserves {RGBContract.ProofOfReserves ^ 0..0xFFFF}
+                  -> assetOwner+
+                  -- errors which may be returned:
+                  !! supplyMismatch
+                   | invalidProof
+                   | insufficientReserves
+
+    op Transfer    :: previous assetOwner+
+                   -> beneficiary assetOwner+
+                   !! nonEqualAmounts
+
+    op? Burn       :: used burnRight
+                    , burnedSupply
+                    , burnProofs {RGBContract.ProofOfReserves ^ 0..0xFFFF}
+                   -> future burnRight?
+                   !! supplyMismatch
+                    | invalidProof
+                    | insufficientCoverage
 
 TBD
 
