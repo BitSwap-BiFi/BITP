@@ -63,5 +63,7 @@ interface RGB20
       -> future source assetOwner+, future destination assetOwner+
         !! insufficientBalance | nonEqualAmounts
 ```
+## Implementation RGB25
 
+TBD
 
