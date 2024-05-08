@@ -15,7 +15,7 @@ BITP stand for Bitswap Improvement Proposal. They exist to document what MUST, w
 - [BITP-11: RGB Wallets](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-11.md)
 - [BITP-12: MEVs attacks](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-12.md)
 - BITP-13: Hardwallets
-- BITP-14: Ssi
+- [BITP-14: Ssi](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-14.md)
 
 ## Contribution
 
