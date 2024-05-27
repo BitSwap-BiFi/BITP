@@ -10,7 +10,7 @@ Hardwallets are more safe way for storage bitcoin and have self-custody present 
 
 ## Advantages
 
-- Safe trading
+- Safe trading via on-chain
 - Cold assets
 - Non risk for hack
 
