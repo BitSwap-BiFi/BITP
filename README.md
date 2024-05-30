@@ -18,7 +18,8 @@ BITP stand for Bitswap Improvement Proposal. They exist to document what MUST, w
 - [BITP-14: Ssi](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-14.md)
 - BITP-15: Payjoin
 - BITP-16: Cation
-- BTP-17: Assets Registries
+- BITP-17: Assets Registries
+- BITP-18: Gasless
 
 ## Contribution
 
