@@ -8,7 +8,7 @@ SSI is a self sovereign identity created by the LNP/BP Association using Single-
 
 ## SSI and DEX
 
-Bitswa will use SSI for:
+Bitswap will use SSI for:
 
 - Decentralization
 - Privacy
