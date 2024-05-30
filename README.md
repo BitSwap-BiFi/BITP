@@ -19,7 +19,7 @@ BITP stand for Bitswap Improvement Proposal. They exist to document what MUST, w
 - BITP-15: Payjoin
 - BITP-16: Cation
 - BITP-17: Assets Registries
-- BITP-18: Gasless
+- BITP-18: Gasless and AMM optimization 
 
 ## Contribution
 
