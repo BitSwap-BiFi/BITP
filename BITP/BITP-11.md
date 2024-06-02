@@ -15,5 +15,4 @@ RGB wallets are software built on the top of Bitcoin and Lightning Network use R
 
 ## Initial wallets 
 
-- Bitlight Wallet
 - Bitmask
