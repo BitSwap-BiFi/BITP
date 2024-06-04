@@ -16,7 +16,7 @@ BITP stand for Bitswap Improvement Proposal. They exist to document what MUST, w
 - [BITP-12: MEVs attacks](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-12.md)
 - [BITP-13: Hardwallets](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-13.md)
 - [BITP-14: Ssi](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-14.md)
-- BITP-15: Payjoin
+- [BITP-15: Payjoin](https://github.com/BitSwap-BiFi/BITP/blob/main/BITP/BITP-15.md)
 - BITP-16: Cation
 - BITP-17: Assets Registries
 - BITP-18: Gasless and AMM optimization 
