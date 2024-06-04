@@ -10,7 +10,7 @@ Source: https://bitcoinops.org/en/topics/payjoin/
 
 ## Payjoin and DEX
 
-Bitswap will use SSI for:
+Bitswap will use Payjoin for:
 
 - Decentralization
 - Privacy
