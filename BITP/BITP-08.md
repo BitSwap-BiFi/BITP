@@ -16,4 +16,6 @@ In summary, the Liquid Network, with its low fees and support for asset issuance
 
 ## Prime
 
-TBD
+Prime is a scalable solution use Client-Side-Valitdation and RGB allowing privacy without need soft forks.
+
+*In the paper, we propose a way to upgrade Bitcoin layer 1 (blockchain/timechain) without a required softfork. The upgrade leverages properties of client-side validation, can be gradual, has a permissionless deployment option (i.e. not requiring majority support or miner cooperation) and will have the scalability of the order (no zk-proofs) or (with zk proofs), where is a global number of transactions. It also offers higher privacy (absence of publically available ledger, transaction graphs, addresses, keys, signatures) and bounded Turing-complete programmability with a rich state provided by RGB or another client-side-validated smart contract system.*
